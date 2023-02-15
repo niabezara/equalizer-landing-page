@@ -33,6 +33,10 @@ header {
   color: #191826;
 }
 
+main {
+  margin-top: 10em;
+}
+
 .background {
   background-color: black;
   position: relative;
@@ -41,10 +45,11 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 10em;
+
   /* max-width: 25em; */
   width: 100%;
 }
+
 .bubbles {
   position: absolute;
   top: 0;
@@ -152,11 +157,13 @@ footer p {
   line-height: 26px;
   color: #191826;
   margin-top: 2em;
-  margin-bottom: 4em;
+  margin-bottom: 1.5em;
 }
 
-svg {
-  margin-left: 1.25em;
+.icons {
+  display: flex;
+  justify-content: space-around;
+  width: 100px;
 }
 
 svg :hover {
@@ -204,7 +211,7 @@ svg :hover {
   }
   .background-yellow {
     width: 24em;
-    transform: translate(15%, -33%);
+    transform: translate(15%, -20%);
   }
   .android {
     margin-top: 1.8em;
@@ -215,7 +222,7 @@ svg :hover {
 
   footer {
     margin-top: 8rem;
-    padding: 0 2em 0 2em;
+    padding: 0 2em 2em 2em;
   }
   .bottom {
     display: flex;
@@ -232,7 +239,7 @@ svg :hover {
     background-position: top -4vh right 0vw, top -24vh right -10vw;
   }
   header {
-    padding: 3.8em 10.25em 0 10.25em;
+    padding: 3.8em 10.25vw 0 10.25vw;
   }
 
   .title h1 {
@@ -248,7 +255,7 @@ svg :hover {
   }
 
   main {
-    padding: 0 10.25em 0 10.25em;
+    padding: 0 10.25vw 0 10.25vw;
   }
 
   .bubbles {
@@ -264,19 +271,22 @@ svg :hover {
     margin-top: 0.6em;
   }
   .background-yellow {
+    height: 625px;
     width: 27em;
-    transform: translate(64%, -35%);
+    transform: translate(64%, -27%);
   }
   .background {
     margin-top: 17em;
   }
   footer {
+    justify-content: space-between;
     flex-direction: row;
     align-items: center;
-    padding: 3.8em 10.25em 0 10.25em;
+    padding: 3.8em 10.25vw 3em 10.25vw;
   }
-  footer p {
-    margin-left: 8.5em;
-    margin-right: 22em;
+
+  .bottom {
+    width: 51em;
+    margin-left: auto;
   }
 }
